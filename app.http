@@ -1,0 +1,57 @@
+### Create a Transaction
+POST http://localhost:3000/api/transactions
+Content-Type: application/json
+
+{
+  "title": "Grocery Shopping",
+  "amount": 100,
+  "categoryId": 1,
+  "type": "Income",
+  "date": "2025-04-27"
+}
+
+### Get All Transactions
+GET http://localhost:3000/api/transactions
+
+### Update a Transaction
+PUT http://localhost:3000/api/transactions/4
+Content-Type: application/json
+
+{
+  "title": "Updated Grocery Shopping",
+  "amount": 120,
+  "categoryId": 4,
+  "type": "Expense",
+  "date": "2025-04-28"
+}
+
+### Delete a Transaction
+DELETE http://localhost:3000/api/transactions/2
+
+### Get All Categories
+GET http://localhost:3000/api/categories
+
+### Add New Category
+POST http://localhost:3000/api/categories
+Content-Type: application/json
+
+{
+  "name": "Salary",
+  "type": "Expense"
+}
+
+### Create or Update Budget
+POST http://localhost:3000/api/budgets
+Content-Type: application/json
+
+{
+  "categoryId":11 ,
+  "amount": 5000
+}
+
+### Get All Budgets
+GET http://localhost:3000/api/budgets
+
+###
+
+DELETE http://localhost:3000/api/budgets
